@@ -1,20 +1,24 @@
-import React from 'react';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import PostCard from '@/components/common/PostCard';
+import Header from "@/components/layout/Header";
 
-const PostsPage: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header />
-      <main className="p-8 space-y-4">
-        <h1 className="text-3xl font-bold mb-4">Posts</h1>
-        <PostCard title="First Post" body="This is a sample post." />
-        <PostCard title="Second Post" body="Another example post." />
+      <main className="flex-grow flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold text-white">
+            Welcome to our Application!
+          </h1>
+          <p className="mt-4 text-xl text-white">
+            We're glad you're here. Explore and enjoy your experience.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-white text-blue-500 rounded-full font-semibold hover:bg-gray-200 transition">
+            Get Started
+          </button>
+            </div>
       </main>
-      <Footer />
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default PostsPage;
+export default Home;
