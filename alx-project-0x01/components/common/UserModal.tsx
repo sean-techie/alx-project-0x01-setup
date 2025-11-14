@@ -105,6 +105,7 @@ const UserModal: React.FC<UserModalProps> = ({ isOpen, onClose, onSubmit }) => {
         </div>
       </div>
 
+
       {/* Tailwind helper class */}
       <style jsx>{`
         .input {
