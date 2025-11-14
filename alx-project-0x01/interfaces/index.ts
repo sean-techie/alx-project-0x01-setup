@@ -41,8 +41,16 @@ export interface UserData {
   };
 }
 
+export interface UserProps {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+}
+
 export interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (user: UserData) => void;
+  onSubmit: (post: UserProps) => void;
 }
+
