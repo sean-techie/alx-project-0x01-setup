@@ -1,11 +1,19 @@
 export interface PostData {
+  userId: number;
   id?: number;
   title: string;
   body: string;
 }
 
 export interface PostModalProps {
-  isOpen: boolean;
   onClose: () => void;
   onSubmit: (post: PostData) => void;
 }
+
+export interface PostProps {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
