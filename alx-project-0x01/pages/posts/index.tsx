@@ -47,5 +47,8 @@ export async function getStaticProps() {
     }
   }
 }
-
+{isModalOpen && (
+        <PostModal onClose={() => setModalOpen(false)} onSubmit={handleAddPost} />
+      )}
+      
 export default Posts;
