@@ -13,8 +13,16 @@ const UserCard: React.FC<UserProps> = ({ name, username, email, phone, website, 
       <p className="text-gray-600 mt-2">
         Company: {company.name} — {company.catchPhrase}
       </p>
+       
+      <h3 className="font-semibold mt-4">Posts:</h3>
+      <ul className="list-disc ml-6">
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default UserCard;
+    
